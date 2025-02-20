@@ -7,6 +7,7 @@
     font-family: "Space Grotesk", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    font-weight: 400;
 }
 
 body {
@@ -28,13 +29,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
     background-color: blue;
     color: white;
 }
 
 #name-section img{
-    width: 100px;
+    width: 50px;
 }
 
 /* Input & Button Adjustments */
@@ -46,6 +47,10 @@ input {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+h2{
+    font-size: 1.2rem;
 }
 
 button {
