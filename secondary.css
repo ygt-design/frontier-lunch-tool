@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.drawingPageContainer{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Action Buttons (only Undo remains) */
+#action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    color: white;
+}
+
+/* Canvas Container for Drawing Page */
+#canvas-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    max-width: 350px;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+
+button {
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid white;
+    font-size: 1rem;
+}

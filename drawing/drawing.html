@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draw Your Canvas</title>
+    <link rel="stylesheet" href="../secondary.css" />
+    <!-- Include p5.js for the drawing canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Firebase libraries -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+
+<body>
+    <div class="drawingPageContainer">
+        <div id="controls">
+            <div class="control-item">
+                <label for="brushSize">Brush Size:</label>
+                <input type="range" id="brushSize" min="10" max="50" value="40" />
+            </div>
+            <div class="control-item">
+                <label for="brushColor">Color:</label>
+                <input type="color" id="brushColor" value="#000000" />
+            </div>
+        </div>
+        <div id="canvas-container"></div>
+        <div id="action-buttons">
+            <button id="undo">Undo</button>
+        </div>
+        <button id="submit-drawing">Submit Drawing</button>
+    </div>
+
+
+    <!-- Our drawing logic -->
+    <script src="drawing.js"></script>
+</body>
+
+</html>

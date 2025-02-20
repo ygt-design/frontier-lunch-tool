@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Presentation Drawing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- p5.js for future drawing canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Firebase libraries (compat version for simplicity) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+
+<body>
+    <!-- Name Input Section -->
+    <div id="name-section">
+        <img src="https://media.tenor.com/GVbLnw73qD8AAAAj/dancing-duck-karlo.gif" alt="">
+        <h2> Enter Your Name</h2>
+        <form id="name-form">
+            <input type="text" id="username" placeholder="Your Name" required />
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-msg" style="color: white; display: none;">
+            This name is already taken. Please choose another.
+        </p>
+    </div>
+
+    <!-- Greeting Section (hidden until name is validated) -->
+    <div id="greeting-section" style="display: none;">
+        <h2 id="greeting-message"></h2>
+        <button id="start-drawing">Start Drawing</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

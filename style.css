@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    background-color: blue;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+#name-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: blue;
+    color: white;
+}
+
+#name-section img{
+    width: 100px;
+}
+
+/* Input & Button Adjustments */
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid white;
+    font-size: 1rem;
+}
+
+
+#greeting-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    width: 250px;
+    padding-top: 40vh;
+    text-align: center;
+}
+
+
+#greeting-section button{
+    margin-top: 20px;
+}
+
+/* Drawing Page Controls */
+.drawingPageContainer{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Action Buttons (only Undo remains) */
+#action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    color: white;
+}
+
+/* Canvas Container for Drawing Page */
+#canvas-container {
+    background: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+/* Gallery Page Styles */
+#gallery-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100vh;
+    width: 100%;
+    gap: 20px;
+    padding: 0 10px;
+    overflow: scroll;
+    padding-bottom: 10vh;
+    max-width: 1000px;
+}
+
+/* Individual Drawing Item Styling */
+.drawing-item {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Username Heading Styling */
+.drawing-item h3 {
+    margin: 10px 0;
+    font-size: 1em;
+    color: white;
+}
+
+.replay-canvas {
+    width: 100%;
+    background: #fafafa;
+    height: 0;
+    padding-bottom: 100%;  /* makes the container square */
+    position: relative;
+}
+
+.replay-canvas canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
